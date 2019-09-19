@@ -1,4 +1,7 @@
-node {  ' slave_node2_WinServe2019'  
+node {  
+	agent {
+		label 'windows'
+  	} 
 	def app
 	stage('Clone repository') {
 		/* Cloning the Repository to our Workspace */
