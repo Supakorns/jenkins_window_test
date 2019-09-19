@@ -1,4 +1,3 @@
-pipeline{
 agent {node {  
 	agent {
 		label 'windows'
@@ -14,5 +13,4 @@ agent {node {
 	stage('copy folder') {
 		bat "move . C:\tiramitsu" 
 	}
-}
 }
