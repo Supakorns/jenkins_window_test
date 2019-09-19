@@ -1,4 +1,5 @@
-agent {node { label 'labelName' }
+pipeline
+	agent { label 'windows' } 
 	def app
 	stage('Clone repository') {
 		/* Cloning the Repository to our Workspace */
