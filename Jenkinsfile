@@ -1,16 +1,25 @@
-
-pipeline{
-	agent {
-		label 'windows'
-  	}
-	stages{
-		step('Clone repository') {
-			/* Cloning the Repository to our Workspace */
-
-			checkout scm
-		}
-		step('copy folder') {
-			bat "move . C:\tiramitsu" 
-		}
-	}
+pipeline {
+    agent { label 'windows'}
+    stages {
+        stage('Example Build') {
+            steps {
+		checkout scm
+            }
+        }
+        /*
+	stage('Example Deploy') {
+            when {
+                beforeInput true
+                branch 'production'
+            }
+            input {
+                message "Deploy to production?"
+                id "simple-input"
+            }
+            steps {
+                echo 'Deploying'
+            }
+        }
+	*/
+    }
 }
