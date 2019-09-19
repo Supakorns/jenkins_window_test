@@ -4,12 +4,12 @@ pipeline{
 		label 'windows'
   	}
 	stages{
-		stage('Clone repository') {
+		step('Clone repository') {
 			/* Cloning the Repository to our Workspace */
 
 			checkout scm
 		}
-		stage('copy folder') {
+		step('copy folder') {
 			bat "move . C:\tiramitsu" 
 		}
 	}
