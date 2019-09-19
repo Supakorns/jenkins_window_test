@@ -1,4 +1,4 @@
-pipeline
+pipeline{
 	agent { label 'windows' } 
 	def app
 	stage('Clone repository') {
