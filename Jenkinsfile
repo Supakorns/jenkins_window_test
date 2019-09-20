@@ -3,11 +3,16 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-		checkout scm
+                checkout scm
+            }
+        }
+		stage('copy folder'){
+            steps{
+                bat "xcopy /hvis . C:\tiramitsu " 
             }
         }
         /*
-	stage('Example Deploy') {
+        stage('Example Deploy') {
             when {
                 beforeInput true
                 branch 'production'
@@ -20,6 +25,6 @@ pipeline {
                 echo 'Deploying'
             }
         }
-	*/
+        */
     }
 }
