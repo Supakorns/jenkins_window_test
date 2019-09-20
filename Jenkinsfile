@@ -8,7 +8,8 @@ pipeline {
         }
 		stage('copy folder'){
             steps{
-                bat "move . C:/1234"
+		bat "cd .."
+		bat "move . C:/1234"
 
             }
         }
