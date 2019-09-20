@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('copy folder'){
             steps{
-                bat "xcopy /hvis . C:\tiramitsu " 
+                bat "xcopy . C:\tiramitsu /s /y" 
             }
         }
         /*
