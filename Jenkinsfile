@@ -9,7 +9,7 @@ pipeline {
 		stage('copy folder'){
             steps{
 		bat "cd .."
-		bat "move . C:/1234"
+		bat "move . C:/Users/Administrator/Desktop/1234 /s /e /y /i"
 
             }
         }
