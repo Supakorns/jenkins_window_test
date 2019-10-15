@@ -3,16 +3,10 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
+		bat "cd /Users/Administrator/Desktop/1234"
                 checkout scm
             }
-        }
-		stage('copy folder'){
-            steps{
-		bat "cd .."
-		bat "move . C:/Users/Administrator/Desktop/1234"
-
-            }
-        }
+	}
         /*
         stage('Example Deploy') {
             when {
