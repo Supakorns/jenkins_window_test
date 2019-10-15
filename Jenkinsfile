@@ -1,12 +1,17 @@
 pipeline {
     agent { label 'windows'}
     stages {
-        stage('Example Build') {
+        stage('clone') {
             steps {
-		bat 'cd /Users/Administrator/Desktop/1234'
                 checkout scm
             }
 	}
+	stage('Example Build') {
+            steps {
+                bat 'xcopy C:\Jenkins_Workspaces\workspace\clone_and_copy C:/Users/Administrator/Desktop/1234 /O /X /E /H /K'
+            }
+        }
+
         /*
         stage('Example Deploy') {
             when {
