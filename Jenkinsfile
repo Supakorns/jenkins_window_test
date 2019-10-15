@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-		bat "cd /Users/Administrator/Desktop/1234"
+		bat 'cd /Users/Administrator/Desktop/1234'
                 checkout scm
             }
 	}
