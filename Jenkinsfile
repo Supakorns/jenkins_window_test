@@ -8,7 +8,7 @@ pipeline {
 	}
 	stage('Example Build') {
             steps {
-                bat 'xcopy C:/Jenkins_Workspaces/workspace/clone_and_copy C:/Users/Administrator/Desktop/1234 /O /X /E /H /K'
+                bat 'xcopy C:/Jenkins_Workspaces/workspace/clone_and_copy C:/Users/Administrator/Desktop/1234 /c /g /d /i /e /r /h /y'
             }
         }
 
