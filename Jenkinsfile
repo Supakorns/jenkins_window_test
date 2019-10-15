@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-		bat 'cd C:/Users/Administrator/Desktop/1234'
-		bat 'git clone https://github.com/Supakorns/jenkins_window_test.git'
-            }
+            	checkout scm
+	    }
 	}/*
 	stage('Example Build') {
             steps {
-                bat 'xcopy C:/Jenkins_Workspaces/workspace/clone_and_copy C:/Users/Administrator/Desktop/1234 /c /g /d /i /e /r /h /y'
+		bat 'C:\Jenkins_Workspaces\workspace\clone_and_copy\jenkins.bat'
             }
         }*/
 
