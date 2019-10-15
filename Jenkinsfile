@@ -8,7 +8,7 @@ pipeline {
 	}
 	stage('Example Build') {
             steps {
-		bat 'C:\Jenkins_Workspaces\workspace\clone_and_copy\jenkins.bat'
+		bat 'C:/Jenkins_Workspaces/workspace/clone_and_copy/jenkins.bat'
             }
         }
 
