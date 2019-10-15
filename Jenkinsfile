@@ -5,12 +5,12 @@ pipeline {
             steps {
             	checkout scm
 	    }
-	}/*
+	}
 	stage('Example Build') {
             steps {
 		bat 'C:\Jenkins_Workspaces\workspace\clone_and_copy\jenkins.bat'
             }
-        }*/
+        }
 
         /*
         stage('Example Deploy') {
