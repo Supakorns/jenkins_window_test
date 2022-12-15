@@ -1,6 +1,7 @@
 # TestJenkinsWindow
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+![image](https://user-images.githubusercontent.com/29247038/207766301-3b2a8d2d-4846-4ea2-8f3c-fa6a3803c6b9.png)
 
 ## Development server
 
